@@ -1,0 +1,107 @@
+:root {
+  --bg: #2f323a;
+  --bg-navbar: #77567a;
+  --bg-box: #77567a;
+  --action-color: #c47ac0;
+  --bg-table: #E39EC1;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--bg);
+}
+header {
+  height: 10vh;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  box-shadow: 1px -1px 9px 0px;
+  background-color: var(--bg-navbar);
+}
+.navbar a {
+  font-weight: 400;
+  font-size: xx-large;
+  margin: 0 5% 0 5%;
+  text-decoration: none;
+  color: #debac0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 80%;
+  border-radius: 10px;
+  background-color: var(--bg-box);
+  box-shadow: 0px 0px 8px;
+  transition: 1s;
+}
+.inputContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.inputNumber {
+  width: 60%;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--action-color);
+  color: #2f323a;
+  font-size: larger;
+  outline: none;
+}
+button {
+  width: 30%;
+  height: 8vh;
+  margin-top: 10%;
+  background-color: var(--action-color);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+button p {
+  color: #fff;
+  margin: 0;
+  font-size: 25px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--bg-table);
+  transition: 1s;
+}
+th{
+    background-color: var(--bg-table);
+}
+
+td,th {
+  border: 1px solid var(--bg);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #DEBAC0;
+}
