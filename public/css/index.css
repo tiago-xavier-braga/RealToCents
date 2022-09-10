@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 :root {
   --bg: #2f323a;
   --bg-navbar: #77567a;
@@ -10,6 +11,7 @@ body {
   margin: 0;
   height: 100vh;
   background-color: var(--bg);
+  font-family: 'Bebas Neue', cursive;
 }
 header {
   height: 10vh;
@@ -30,7 +32,7 @@ header {
   font-size: xx-large;
   margin: 0 5% 0 5%;
   text-decoration: none;
-  color: #debac0;
+  color: #fff;
 }
 main {
   display: flex;
@@ -50,7 +52,7 @@ main {
   border-radius: 10px;
   background-color: var(--bg-box);
   box-shadow: 0px 0px 8px;
-  transition: 1s;
+  transition: 0.2s;
 }
 .inputContent {
   display: flex;
@@ -67,7 +69,7 @@ main {
   text-align: center;
   border-radius: 10px;
   background-color: var(--action-color);
-  color: #2f323a;
+  color: #fff;
   font-size: larger;
   outline: none;
 }
@@ -95,13 +97,16 @@ table {
 th{
     background-color: var(--bg-table);
 }
-
 td,th {
   border: 1px solid var(--bg);
   text-align: left;
   padding: 8px;
 }
-
 tr:nth-child(even) {
   background-color: #DEBAC0;
+}
+@media only screen and (min-width: 768px){
+  .box{
+    width: 30%;
+  }
 }
